@@ -20,9 +20,9 @@ The time taken to execute a transaction usually called latency needs to be very 
 
 The schema of an OLTP database is higly normalized so as to achieve a very low latency. To further improve the latency an OLTP database stores only the recent data like the last few week's data. They are usually run on storage that is very fast like SSD.
 
-The OLTP database schema can be found here : [oltp_database_mysql.sql](https://github.com/pgrondein/data_platform_for_data_analytics/blob/ea1e2ab4eb97e72ba43c80f5660b7042c1edb92b/oltp_database_mysql.sql)
+The OLTP database schema can be found here : [oltp_database_mysql.sql](https://github.com/aneeshrajdonthi/DATA-PLATFORM-FOR-DATA-ANALYTICS/blob/main/oltp_database_mysql.sql)
 
-The bash script to export data can be found here : [datadump.sh](https://github.com/pgrondein/data_platform_for_data_analytics/blob/275c7240d5176d47dbfe530c89684cb99ee3c20e/datadump.sh)
+The bash script to export data can be found here : [datadump.sh](https://github.com/aneeshrajdonthi/DATA-PLATFORM-FOR-DATA-ANALYTICS/blob/main/datadump.sh)
 
 ## Design of a NoSQL database - MongoDB
 
@@ -170,11 +170,11 @@ The Python script needs to
 - connect to MySQL staging data warehouse and find all rows later than the last row on the datawarehouse.
 - Insert the new data in the MySQL staging data warehouse into the PostgreSQL production data warehouse.
 
-The Python script is available here : [etl.py](https://github.com/pgrondein/data_platform_for_data_analytics/blob/f1cf0e857b2209264bfe97486afc96dcc1e491a6/etl.py)
+The Python script is available here : [etl.py](https://github.com/aneeshrajdonthi/DATA-PLATFORM-FOR-DATA-ANALYTICS/blob/main/etl.py)
 
 ## Design of a Big Data architecture - Apache Spark
 
 Finally, we will use our skills in Big Data Analytics to create a Spark connection to the data warehouse and then deploy a machine learning model on SparkML for making sales projections.
 
-The Python script is available here : [big_data_script.py](https://github.com/pgrondein/data_platform_for_data_analytics/blob/5b95af92f8dbd1a49c07dfed68213fe002baf752/big_data_script.py)
+The Python script is available here : [big_data_script.py](https://github.com/aneeshrajdonthi/DATA-PLATFORM-FOR-DATA-ANALYTICS/blob/main/big_data_script.py)
 
